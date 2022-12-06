@@ -1,0 +1,267 @@
+@media screen and (max-width:678px){
+    
+  .nav-links{
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 8vh;
+      background-color: 
+      grey;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translate(100%);
+      transition: transform 0.5s;
+      z-index: 999;
+  }
+  .body{
+      overflow-x:hidden;
+  
+  }
+  .nav-links li{
+  opacity: 1;
+  } 
+  .burger{
+      display: blocks;
+      cursor:pointer;
+  }
+  .nav-active{
+      transform:translate(0)
+  }
+  /*Animate the navigation links one by one */
+
+  @keyframes nalinkFade {
+      from{
+          opacity:0;
+          transform: translate(50px);
+      
+      }
+      to{
+          opacity:1;
+          transform: translate(50px);
+      }
+  }
+      .toggle .line2{
+        opacity: 0;
+      }
+      .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+
+      .contact{
+        background: lightgray;
+      }
+      .contact .content{
+        margin: 0 auto;
+        padding: 10px 0;
+      }
+      .contact .text{
+        width: 40%;
+        text-align: center;
+        margin: auto;
+      }
+
+      .contact .text{
+        width: 70%;
+    }
+    .contact-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 5px;
+        position: relative;
+        max-width: 900px;
+      }
+      .contact-list {
+        list-style-type: none;
+        margin-left: 0px;
+        
+      }
+
+      .contact-text {
+        font: 300 18px 'Lato', sans-serif;
+        letter-spacing: 1.9px;
+        color: #bbb;
+      }
+     .contact-text a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+      .contact-text a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+      .contact-us {
+        background: url("images/bg1.jpg") no-repeat center fixed;
+        background-size: cover;
+        min-height: 300px;
+        color: rgb(0, 0, 0);
+      }
+      .contact-us .fields {
+        background: rgba(2, 2, 2, 0.7);
+        min-height: 300px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      
+      .contact-us p {
+        margin-bottom: 40px;
+      }
+      
+      .contact-us textarea {
+        height: 108px;
+      }
+      
+      .contact-us input[type="text"], .contact-us textarea {
+        background: rgba(82, 78, 78, .7);
+        border: none;
+        color: #fff;
+      }
+
+      
+      .container {
+        width: 80%;
+        padding: 20px;
+      }
+      
+      .container h2 {
+        width: 100%;
+        color: navy;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      
+      .container .row100 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      }
+      
+      .container .row100 .col {
+        position: relative;
+        width: 100%;
+        padding: 0 10px;
+        margin: 30px 0 10px;
+        transition: 0.5s;
+      }
+      
+      .container .row100 .inputBox {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        color: gray;
+      }
+      
+      .container .row100 .inputBox input,
+      .container .row100 .inputBox.textarea textarea {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding: 0 10px;
+        z-index: 1;
+        color: #000;
+      }
+      
+      .container .row100 .inputBox .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 40px;
+        font-size: 18px;
+        padding: 0 10px;
+        display: block;
+        transition: 0.5s;
+        pointer-events: none;
+      }
+      
+      .container .row100 .inputBox input:focus + .text,
+      .container .row100 .inputBox input:valid + .text {
+        top: -35px;
+        left: -10px;
+      }
+      
+      .container .row100 .inputBox .line {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: gray ;
+        transition: 0.5s;
+        border-radius: 2px;
+        pointer-events: none;
+      }
+      
+      .container .row100 .inputBox input:focus ~ .line,
+      .container .row100 .inputBox input:valid ~ .line {
+        height: 100%;
+      }
+      
+      .container .row100 .inputBox.textarea {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        padding: 10px 0;
+      }
+      
+      .container .row100 .inputBox.textarea textarea {
+        height: 100%;
+        resize: none;
+      }
+      
+      .container .row100 .inputBox textarea:focus + .text,
+      .container .row100 .inputBox textarea:valid + .text {
+        top: -35px;
+        left: -10px;
+      }
+      
+      .container .row100 .inputBox textarea:focus ~ .line,
+      .container .row100 .inputBox textarea:valid ~ .line {
+        height: 100%;
+      }
+      input[type="submit"] {
+        border: none;
+        padding: 7px 35px;
+        cursor: pointer;
+        outline: none;
+        background: navy;
+        color: #000;
+        font-size: 18px;
+        border-radius: 2px;
+      }
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

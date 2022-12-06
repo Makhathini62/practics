@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+:root{
+    --bg-color:gray;
+    --text-color:navy;
+    --headline-color:grey;
+    --button-color:peachpuff;
+    --accent-color:rgb(8, 252, 8);
+    --headline-font: 'Gulzar';
+    --body-font:'Arima'
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: var(--body-font);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--bg-color);
+}
+.logo{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.nav-links{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+.nav-links li{
+    list-style: none;
+    color: var(--text-color);
+}
+.nav-links a{
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    font-family: var(--headline-font);
+}
+nav > .burger > div{
+    width: 25px;
+    height: 3px;
+    background-color: powderblue;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+/* tablet zone */
+@media screen and (max-width: 1024px) {
+    .nav-links{
+        width: 50%;
+    }
+}
+/* Hero section style starts here */
+.hero-section{
+    height: calc(100vh - 8vh);
+    background-image: url("../images/prawn\ curry.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-section::before{
+    content: "";
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+     background-color: rgb(10, 176, 253);
+     position: absolute;
+     opacity: 0.4;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20rem;
+}
+.section-title{
+     color: rgb(60, 243, 14);
+     font-size: 2rem;
+     font-weight: bolder;
+     letter-spacing: 1rem;
+     margin-bottom: 1rem;
+     font-family: "Arial";
+     text-shadow: 0 1px 0 navy;
+}
+.main p{
+    color: black;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main .hero{
+    width: 100px;
+    display: inline-block;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    margin-top: 10px;
+    transition: all 0.4s ease-in;
+}
+.hero:hover{
+    background-color: var(--bg-color);
+}
+.hero a{
+    padding: 10px 0px;
+    text-decoration: none;
+    color: aqua;
+    font-size: 1rem;
+    display: inline-block;
+    transition: all 0.4s ease-in;
+}
+.hero a:hover{
+    color: navajowhite;
+}
+.category{
+    height: 10vh;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.category a{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.all img{
+  width: 15vw;
+  height: 15vw;
+  margin: 1rem;
+}
+
+.all{
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+}
+/* .active{
+    background-color: lightgray;
+    color: bisque;
+} */
+/* .card-wrapper{
+    /* display: flex;
+    width: 80%; */
+    /* margin: 0 auto;
+    gap: 10px;
+} */
+/* .main-content{
+    background-color:darkgray;
+    width: 70%;
+    display: flex;
+    gap: 15px;
+} */ 
+/* .card-items{
+    display: flex;
+    width: 400px;
+    height: 400px;
+
+} */
+/* #breakfast{
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+} */
+/* article{
+    width: 100%;
+    background-color: darkgray;
+} */
+
+/* .bloImage{
+width: 30%;
+}
+/* .bloImage img{
+    width: 100%;
+    height: 150px;
+} */
+/* article > div.search-box input{
+    width: 90%;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    border: none;
+    margin: 20px auto;
+    font-size: 1.6rem;
+} */ */
+/* .souffle{
+  background-color: pink;
+}
+.souffle img{
+  justify-content: center;
+  align-items: center;
+} */
+.contact{
+    background: gray;
+  }
+  .contact .content{
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  .contact .text{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+  .contact .text{
+    width: 100%;
+}
+.logo h2{
+  text-align: center;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+  }
+  .contact-list {
+    list-style-type: none;
+    margin-left: 0px;
+    
+  }
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .contact-us {
+    background: url("images/bg1.jpg") no-repeat center fixed;
+    background-size: cover;
+    min-height: 300px;
+    color: rgb(0, 0, 0);
+  }
+  .contact-us .fields {
+    background: rgba(2, 2, 2, 0.7);
+    min-height: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .contact-us p {
+    margin-bottom: 40px;
+  }
+  
+  .contact-us textarea {
+    height: 108px;
+  }
+  
+  .contact-us input[type="text"], .contact-us textarea {
+    background: rgba(82, 78, 78, .7);
+    border: none;
+    color: #fff;
+  }
+  .container {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .container h2 {
+    width: 100%;
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .container .row100 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  }
+  
+  .container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+  }
+  
+  .container .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: black;
+  }
+  
+  .container .row100 .inputBox input,
+  .container .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+  }
+  
+  .container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .container .row100 .inputBox input:focus + .text,
+  .container .row100 .inputBox input:valid + .text {
+    top: -35px;
+    left: -10px;
+  }
+  
+  .container .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: gray;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  
+  .container .row100 .inputBox input:focus ~ .line,
+  .container .row100 .inputBox input:valid ~ .line {
+    height: 100%;
+  }
+  
+  .container .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+  }
+  
+  .container .row100 .inputBox.textarea textarea {
+    height: 100%;
+    resize: none;
+  }
+  
+  .container .row100 .inputBox textarea:focus + .text,
+  .container .row100 .inputBox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
+  }
+  
+  .container .row100 .inputBox textarea:focus ~ .line,
+  .container .row100 .inputBox textarea:valid ~ .line {
+    height: 100%;
+  }
+  input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: gray;
+    color: black;
+    font-size: 18px;
+    border-radius: 2px;
+  }
+ 
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
