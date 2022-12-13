@@ -61,6 +61,10 @@ nav > .burger > div{
         width: 50%;
     }
 }
+
+#search{
+  display: none;
+}
 /* Hero section style starts here */
 .hero-section{
     height: calc(100vh - 8vh);
@@ -86,7 +90,7 @@ nav > .burger > div{
     position: relative;
     width: 80%;
     margin: 0 auto;
-    padding-top: 20rem;
+    padding-top: 4rem;
 }
 .section-title{
      color: rgb(60, 243, 14);
@@ -153,6 +157,12 @@ nav > .burger > div{
   display: flex;
   justify-content: space-between;
   background-color: lightgray;
+}
+.footer p{
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* .active{
     background-color: lightgray;
