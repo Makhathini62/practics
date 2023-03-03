@@ -94,7 +94,6 @@
         text-decoration: none;
       }
       .contact-us {
-        background: url("images/bg1.jpg") no-repeat center fixed;
         background-size: cover;
         min-height: 300px;
         color: rgb(0, 0, 0);
@@ -233,7 +232,7 @@
         cursor: pointer;
         outline: none;
         background: navy;
-        color: #000;
+        color: whitesmoke;
         font-size: 18px;
         border-radius: 2px;
       }
